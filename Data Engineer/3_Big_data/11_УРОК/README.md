@@ -89,10 +89,10 @@ N481HA | 1434
 * *flights_path* - путь к файлу с данными
 * *result_path* - путь куда будет сохранен результат
 
-**Подсказки:** [groupby][1], [orderby][2]
+**Подсказки:** [groupby][4], [orderby][5]
 
-[1]: https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/api/pyspark.sql.DataFrame.groupBy.html?highlight=groupby#pyspark-sql-dataframe-groupby
-[2]: https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/api/pyspark.sql.DataFrame.orderBy.html?highlight=orderby#pyspark-sql-dataframe-orderby
+[4]: https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/api/pyspark.sql.DataFrame.groupBy.html?highlight=groupby#pyspark-sql-dataframe-groupby
+[5]: https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/api/pyspark.sql.DataFrame.orderBy.html?highlight=orderby#pyspark-sql-dataframe-orderby
 
 **Строка запуска:**
 ```sh
@@ -123,10 +123,7 @@ avg_air_time | среднее время в небе по маршруту
 * *flights_path* - путь к файлу с данными
 * *result_path* - путь куда будет сохранен результат
 
-**Подсказки:** [groupby][1], [orderby][2]
-
-[1]: https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/api/pyspark.sql.DataFrame.groupBy.html?highlight=groupby#pyspark-sql-dataframe-groupby
-[2]: https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/api/pyspark.sql.DataFrame.orderBy.html?highlight=orderby#pyspark-sql-dataframe-orderby
+**Подсказки:** [groupby][4], [orderby][5]
 
 **Строка запуска:**
 ```sh
@@ -157,11 +154,10 @@ corr_delay2day_of_week | Корреляция между временем зад
 * *flights_path* - путь к файлу с данными
 * *result_path* - путь куда будет сохранен результат
 
-**Подсказки:** [groupby][1], [filter][2], [corr][3]
+**Подсказки:** [groupby][4], [filter][6], [corr][7]
 
-[1]: https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/api/pyspark.sql.DataFrame.groupBy.html?highlight=groupby#pyspark-sql-dataframe-groupby
-[2]: https://spark.apache.org/docs/latest/api/python/reference/pyspark.pandas/api/pyspark.pandas.DataFrame.filter.html?highlight=filter#pyspark.pandas.DataFrame.filter
-[3]: https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/api/pyspark.sql.DataFrame.corr.html?highlight=corr#pyspark-sql-dataframe-corr
+[6]: https://spark.apache.org/docs/latest/api/python/reference/pyspark.pandas/api/pyspark.pandas.DataFrame.filter.html?highlight=filter#pyspark.pandas.DataFrame.filter
+[7]: https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/api/pyspark.sql.DataFrame.corr.html?highlight=corr#pyspark-sql-dataframe-corr
 
 **Строка запуска:**
 ```sh
@@ -198,11 +194,11 @@ DESTINATION_LONGITUDE | Долгота аэропорта прибытия (airp
 * *airports_path* - путь к файлу с данными о аэропортах
 * *result_path* - путь куда будет сохранен результат
 
-Подсказки: [join][1], [withColumnRenamed][2], [withColumn][3]
+Подсказки: [join][8], [withColumnRenamed][9], [withColumn][10]
 
-[1]: https://spark.apache.org/docs/latest/api/python/reference/pyspark.pandas/api/pyspark.pandas.DataFrame.join.html?highlight=join#pyspark.pandas.DataFrame.join
-[2]: https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/api/pyspark.sql.DataFrame.withColumnRenamed.html?highlight=withcolumn#pyspark.sql.DataFrame.withColumnRenamed
-[3]: https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/api/pyspark.sql.DataFrame.withColumn.html?highlight=withcolumn#pyspark-sql-dataframe-withcolumn
+[8]: https://spark.apache.org/docs/latest/api/python/reference/pyspark.pandas/api/pyspark.pandas.DataFrame.join.html?highlight=join#pyspark.pandas.DataFrame.join
+[9]: https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/api/pyspark.sql.DataFrame.withColumnRenamed.html?highlight=withcolumn#pyspark.sql.DataFrame.withColumnRenamed
+[10]: https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/api/pyspark.sql.DataFrame.withColumn.html?highlight=withcolumn#pyspark-sql-dataframe-withcolumn
 
 **Строка запуска:**
 ```sh
@@ -239,9 +235,9 @@ security_issue_count | число задержек из-за службы без
 * *airlines_path* - путь к файлу с данными об авиалиниях
 * *result_path* - путь куда будет сохранен результат
 
-**Подсказки:** [when/otherwise][1]
+**Подсказки:** [when/otherwise][11]
 
-[1]: https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/api/pyspark.sql.Column.when.html?highlight=when#pyspark-sql-column-when
+[11]: https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/api/pyspark.sql.Column.when.html?highlight=when#pyspark-sql-column-when
 
 **Строка запуска:**
 ```sh
